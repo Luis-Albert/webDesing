@@ -3,26 +3,108 @@
   margin: 0;
 }
 
-.header {
-  display: flex;
-  justify-content: space-around;
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.imageApp {
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  grid-template-columns: auto auto;
+}
+
+.cardAddImage {
+  text-align: center;
+  display: grid;
   align-content: center;
-  padding-top: 10px;
 }
 
-.header img {
-  width: 100px;
-  border-radius: 999px;
-  height: 50px;
+.listaAddImage {
+  /* border: solid 1px red; */
 }
 
-.lista-nav {
-  list-style: none;
+* {
+  padding: 0;
+  margin: 0;
 }
-.lista-nav a {
-  text-decoration: none;
-  font-size: 24px;
-  color: #29285f;
+body {
   font-family: Arial, Helvetica, sans-serif;
-  font-weight: 666;
+  font-size: 16px;
+}
+
+.container {
+  min-width: 1200px;
+  margin: 0 auto;
+}
+
+.card {
+  width: 400px;
+  height: 400px;
+  border: 1px solid black;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.formulario {
+  display: grid;
+}
+
+.card-title {
+  border-bottom: 1px solid black;
+  background: rgba(202, 199, 199, 0.849);
+  padding: 10px 2px;
+}
+
+.form-input {
+  display: grid;
+}
+.cardImage {
+  min-width: 50px;
+  min-height: 200px;
+  margin: 0 auto;
+}
+.cardImage i {
+  font-size: 200px;
+  cursor: pointer;
+}
+.cardImage i:hover {
+  cursor: pointer;
+}
+.form-input > input {
+  display: none !important;
+}
+
+textarea {
+  width: 280px;
+  height: 40px;
+  resize: none;
+  margin: 0 auto;
+  overflow-y: auto;
+  border: 1px solid black;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+.btn {
+  width: 150px;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 8px;
+  border-radius: 15px;
+}
+
+.btn-primary {
+  background-color: #46e619bf;
+  border: 3px solid #228b2954 !important;
+  color: rgb(248, 248, 248);
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.btn-primary:hover {
+  transition: 0.3s;
+  background-color: #45e619ef;
+  border: 3px solid #228b29ab !important;
 }
